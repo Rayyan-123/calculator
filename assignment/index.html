@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Modules</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        #result {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator Modules</h1>
+        <div class="input-group">
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" value="10">
+        </div>
+        <div class="input-group">
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" value="5">
+        </div>
+        <div class="buttons">
+            <button id="addBtn">Add (+)</button>
+            <button id="subtractBtn">Subtract (-)</button>
+            <button id="multiplyBtn">Multiply (×)</button>
+            <button id="divideBtn">Divide (÷)</button>
+        </div>
+        <div id="result">Result will appear here</div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
